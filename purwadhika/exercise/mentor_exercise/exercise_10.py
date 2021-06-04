@@ -15,6 +15,7 @@
 # Jumlah kata 'Nanti' ada sebanyak 1
 # Jumlah kata 'Malam' ada sebanyak 1
 
+# solution 1
 def word_count(x):
     y = x.split(" ")
     z = []
@@ -36,3 +37,19 @@ def word_count(x):
 
 x = 'Aku baru makan nasi terus aku mau makan mie nanti malam'
 word_count(x)
+
+# solution 2
+def word_count(txt):
+    txt_split = txt.split(" ")
+    txt_capitalize = []
+    for word in txt_split:
+        txt_capitalize.append(word.capitalize())
+    txt_filter = list(set(txt_capitalize))
+    txt_filter.sort()
+    for word in txt_filter:
+        count = 0
+        for word_check in txt_capitalize:
+            if word == word_check:
+                count += 1
+        print("Jumlah kata '{}' ada sebanyak {}".format(word,count))
+    return

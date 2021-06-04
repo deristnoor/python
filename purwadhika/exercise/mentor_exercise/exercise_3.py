@@ -3,5 +3,9 @@
 # output: 15 (Hasil penjumlahan dari isi list --> 1 + 2 + 3 + 4 + 5)
 
 x = [1, 2, 3, 4, 5]
+y = 0
 
-print(sum(x))
+for i in x:
+    y += i
+
+print(y)
