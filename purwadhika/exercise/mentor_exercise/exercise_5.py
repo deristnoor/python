@@ -3,9 +3,9 @@
 # output 3412 (buatlah solusi hanya dengan menggunakan operasi matematika)
 
 # solution 1
-x = int(input("masukkan 4 angka: "))
-output = 3412 - x
-print(x + output)
+# x = int(input("masukkan 4 angka: "))
+# output = 3412 - x
+# print(x + output)
 
 # soulution 2
 x = input("masukkan 4 angka: ")
